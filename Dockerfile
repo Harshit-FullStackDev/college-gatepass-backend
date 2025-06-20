@@ -11,4 +11,5 @@ COPY . .
 RUN chmod +x mvnw && ./mvnw clean package -DskipTests
 
 # Run the built JAR (assuming it's in target/*.jar)
-CMD ["java", "-jar", "$(ls target/*.jar)"]
+CMD ["java", "-jar", "target/college_gatepass-0.0.1-SNAPSHOT.jar"]
+
